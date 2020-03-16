@@ -10,7 +10,7 @@
 - Database: sqlite3
 - Testing: rspec 3.9
 
-## Attack Plan
+## Action Plan
 - Load data into application and decide schema
 - Setup route to handle request and API requirements
 - Create business logic for happy path
@@ -18,21 +18,21 @@
 - Write unit tests
 - Linting and documentation
 
-I decided to use a Ruby on Rails application because it allows for scalability and enhancements in the future very easily. I figure that if this was a real coding challenge was a real story there would be more in the future to add more endpoints for finding pharmacies based on name, city, or state. Ruby on Rails is also able to serve a front-end javascript to accompany if needed so there would be a clean portal for an end user to get the informationt they needed.
+I decided to use a Ruby on Rails application because it allows for scalability and enhancements in the future very easily. I figured that if this coding challenge was a real user story there would be more in the future to add more functionality. Ruby on Rails is also able to serve a front-end javascript so there would be a clean portal for an end user to get the information they needed.
 
-I wanted to use a database to store the data for the pharmacies for ease of use and also to easily change what data is there. The other option for this challenge would have been to load it every time the application starts or when requested on each request and utilize a cache. In a production/real environment it would be more likely that this engine would make a request to another database somewhere and get that information (assuming this engine would be used to serve javascript).
+I wanted to use a database to store the data for the pharmacies for ease of use and also to easily change what data is available. The other option for this challenge would have been to load it every time the application starts or on each request and utilize a cache. In a production/real environment it would be more likely that this engine would make a request to another database somewhere and get that information (assuming this engine would be used to serve javascript).
 
 ## Challenges
-I have used Ruby on Rails before in a couple different situations. What I had never before, however, was 1.) use a database or 2.) start a brand new ruby on rails application from the ground up. Both of those points provided their own unique challenges.
+I have used Ruby on Rails before in a couple different situations. What I had never done before, however, was 1.) use a database or 2.) start a brand new Ruby on Rails application from the ground up. Both of those points provided their own unique challenges.
 
-Since I had not used a database before with Ruby on Rails I had to quickly become acquanted(spelling????) with best practices and performance. Fortunately there wasn't a ton of data or weird edge cases with the data but I definitely didn't want to edit the file or format of the data in anyway before it got to the database. I did however trim the data before it got to the database.
+Since I had not used a database before with Ruby on Rails I had to quickly become acquainted with best practices and performance. Fortunately there wasn't a ton of data or weird edge cases with the data but I definitely didn't want to edit the file or format of the data in anyway before it got to the database. I did however trim the data before it got to the database.
 
-Starting a brand new Ruby on Rails application was a challenge simply because there were quite a few setup things that I had little experience for. Luckily documentation was plentiful and very help. I feel like for the most common problems people see when setting up an application I should be able to solve give enough time to understand the particular environment.
+Starting a brand new Ruby on Rails application was a challenge simply because there were quite a few setup things that I had little experience with. Luckily documentation was plentiful and very helpful.
 
 ## Future Plans
 If I was to continue this project there are a few improvements I would make outside of the original challenge given.
 - Create a front end for a user to use the endpoint with
-- Use google maps api to get distance based on driving or walking paths instead of with the haversine formula.
+- Use Google Maps API to get distance based on driving or walking paths instead of with the haversine formula
 - Allow for an address to be used as a user location
 - Allow for a user to provide filters so they can find their nearest preferred pharmacy.
 - Provide more endpoints that provide more functionality. Notably, return a list of nearby pharmacies, return contact info and store hours for a pharmacy, and return driving directions to a specific pharmacy.
