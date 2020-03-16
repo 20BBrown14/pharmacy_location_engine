@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -12,18 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-# rubocop:disable Style/NumericLiterals
 ActiveRecord::Schema.define(version: 2020_03_13_234120) do
-  # rubocop:enable Style/NumericLiterals
-  create_table 'pharmacies', force: :cascade do |t|
-    t.string 'name'
-    t.string 'address'
-    t.string 'city'
-    t.string 'state'
-    t.string 'zip'
-    t.string 'latitude'
-    t.string 'longitude'
-    t.datetime 'created_at', precision: 6, null: false
-    t.datetime 'updated_at', precision: 6, null: false
+
+  create_table "pharmacies", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.string "city"
+    t.string "state"
+    t.string "zip"
+    t.string "latitude"
+    t.string "longitude"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 end

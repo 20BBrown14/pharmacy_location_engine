@@ -17,7 +17,7 @@ class PharmacyController < ApplicationController
 
     @nearest_pharmacy = Pharmacy.determine_nearest(params[:latitude], params[:longitude])
 
-    return head 500 unless @nearest_pharmacy.nil? || @nearest_pharmacy.distance.nil?
+    return head 500 unless !@nearest_pharmacy.nil? && !@nearest_pharmacy.distance.nil?
 
     render formats: :json
 

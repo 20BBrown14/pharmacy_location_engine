@@ -74,3 +74,6 @@ To lint all ruby files in the directory. There should always be 0 warnings and 0
 
 Most files can be edited and saved while server is running and automatically hotload the changes.
 
+
+## Notes
+See [Backend Developer Code Challenge](Backend_Developer_Code_Challenge.md) for information about how I went about this project and what improvements I would make in the future.

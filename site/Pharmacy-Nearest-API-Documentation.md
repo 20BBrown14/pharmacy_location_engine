@@ -2,7 +2,7 @@
 
 ## Resources
 
-### Retrieve nearest pharmacy
+### Retrieve Nearest Pharmacy
 
 Retrieve the nearest pharmacy to given lat/long points from a list of pharmacies in the database.
 
